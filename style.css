@@ -90,3 +90,63 @@ body {
   padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Reveal / scroll animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px) scale(0.98);
+  transition: opacity 450ms cubic-bezier(.2,.9,.2,1), transform 450ms cubic-bezier(.2,.9,.2,1);
+  will-change: transform, opacity;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.skill-card {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* subtle pop for profile image */
+.profile-image.reveal {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.profile-image.reveal.visible {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 500ms cubic-bezier(.2,.9,.2,1), opacity 500ms ease;
+}
+
+/* Cards slight rotate on hover for liveliness */
+.card:hover {
+  transform: translateY(-6px) rotate(-0.2deg);
+}
+
+/* Staggered badges */
+.badge {
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+.badge:hover {
+  transform: translateY(-3px);
+}
+
+/* Make project images a bit taller on large screens */
+@media (min-width: 992px) {
+  .project-card-img { height: 260px; }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .card, .profile-image, .badge {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
