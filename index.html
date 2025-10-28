@@ -81,80 +81,86 @@
             <!-- Skills Section -->
             <section id="skills" class="mb-5">
                 <h2 class="section-title">Technical Skills</h2>
-                <div class="skill-grid">
-                    <div class="skill-card text-center reveal" role="button" tabindex="0">
-                        <img src="assets/icons/dotnet-official.png" alt="Backend" class="skill-icon" onerror="this.onerror=null;this.src='assets/icons/dotnet.svg'">
-                        <h4 class="h5">Backend Development</h4>
-                        <p>C#, ASP.NET Core, Web API,.NET MVC, LINQ, Entity Framework</p>
-                        <div class="skill-detail d-none">
-                            <p>Experience building scalable backend systems with .NET. Familiar with REST APIs, background processing and serverless functions.</p>
-                            <ul>
-                                <li>.NET Core & ASP.NET Web API</li>
-                                <li>Azure Functions & Serverless integrations</li>
-                                <li>Message-based patterns (Service Bus)</li>
-                                <li>Logging & monitoring (App Insights)</li>
-                            </ul>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="skill-card text-center reveal" role="button" tabindex="0">
+                            <img src="assets/icons/dotnet-official.png" alt="Backend" class="mb-3" width="64" height="64" style="object-fit: contain;" onerror="this.onerror=null;this.src='assets/icons/dotnet.svg'">
+                            <h4 class="h5 mb-3">Backend Development</h4>
+                            <p class="mb-0">C#, ASP.NET Core, Web API,.NET MVC, LINQ, Entity Framework</p>
+                            <div class="skill-detail d-none">
+                                <p>Experience building scalable backend systems with .NET. Familiar with REST APIs, background processing and serverless functions.</p>
+                                <ul>
+                                    <li>.NET Core & ASP.NET Web API</li>
+                                    <li>Azure Functions & Serverless integrations</li>
+                                    <li>Message-based patterns (Service Bus)</li>
+                                    <li>Logging & monitoring (App Insights)</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="skill-card text-center reveal" role="button" tabindex="0">
-                        <img src="assets/icons/azure-official.png" alt="Azure Cloud" class="skill-icon" onerror="this.onerror=null;this.src='assets/icons/azure.svg'">
-                        <h4 class="h5">Cloud Services</h4>
-                        <p>Azure Function APPS, Service Bus, Storage Account, Key Vault, Azure SQL</p>
-                        <div class="skill-detail d-none">
-                            <p>Hands-on with Azure PaaS and serverless components to build resilient cloud solutions.</p>
-                            <ul>
-                                <li>Azure Function Apps for event-driven processing</li>
-                                <li>Service Bus for reliable messaging</li>
-                                <li>Blob & File Storage (Storage Account)</li>
-                                <li>Key Vault for secrets & certificates</li>
-                                <li>Azure SQL for relational data</li>
-                            </ul>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="skill-card text-center reveal" role="button" tabindex="0">
+                            <img src="assets/icons/azure-official.png" alt="Azure Cloud" class="mb-3" width="64" height="64" style="object-fit: contain;" onerror="this.onerror=null;this.src='assets/icons/azure.svg'">
+                            <h4 class="h5 mb-3">Cloud Services</h4>
+                            <p class="mb-0">Azure Function APPS, Service Bus, Storage Account, Key Vault, Azure SQL</p>
+                            <div class="skill-detail d-none">
+                                <p>Hands-on with Azure PaaS and serverless components to build resilient cloud solutions.</p>
+                                <ul>
+                                    <li>Azure Function Apps for event-driven processing</li>
+                                    <li>Service Bus for reliable messaging</li>
+                                    <li>Blob & File Storage (Storage Account)</li>
+                                    <li>Key Vault for secrets & certificates</li>
+                                    <li>Azure SQL for relational data</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="skill-card text-center reveal" role="button" tabindex="0">
-                        <img src="assets/icons/html5-official.png" alt="Frontend" class="skill-icon" onerror="this.onerror=null;this.src='assets/icons/html5.svg'">
-                        <h4 class="h5">Frontend Development</h4>
-                        <p>HTML, CSS, JavaScript, Bootstrap</p>
-                        <div class="skill-detail d-none">
-                            <p>UI development with responsive, accessible and performant frontend technologies.</p>
-                            <ul>
-                                <li>Semantic HTML5 & CSS3</li>
-                                <li>Responsive layouts with Bootstrap</li>
-                                <li>JavaScript for interactivity and DOM manipulation</li>                                    
-                                <li>Client-side optimization and accessibility</li>
-                            </ul>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="skill-card text-center reveal" role="button" tabindex="0">
+                            <img src="assets/icons/html5-official.png" alt="Frontend" class="mb-3" width="64" height="64" style="object-fit: contain;" onerror="this.onerror=null;this.src='assets/icons/html5.svg'">
+                            <h4 class="h5 mb-3">Frontend Development</h4>
+                            <p class="mb-0">HTML, CSS, JavaScript, Bootstrap</p>
+                            <div class="skill-detail d-none">
+                                <p>UI development with responsive, accessible and performant frontend technologies.</p>
+                                <ul>
+                                    <li>Semantic HTML5 & CSS3</li>
+                                    <li>Responsive layouts with Bootstrap</li>
+                                    <li>JavaScript for interactivity and DOM manipulation</li>                                    
+                                    <li>Client-side optimization and accessibility</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="skill-card text-center reveal" role="button" tabindex="0">
-                        <img src="assets/icons/sqlserver-official.svg" alt="Database" class="skill-icon" onerror="this.onerror=null;this.src='assets/icons/sqlserver.svg'">
-                        <h4 class="h5">Database</h4>
-                        <p>SQL Server, MongoDB</p>
-                        <div class="skill-detail d-none">
-                            <p>Database design, querying and performance tuning across relational and document stores.</p>
-                            <ul>
-                                <li>SQL Server: schemas, stored procedures, performance tuning</li>
-                                <li>Designing indexes and query optimization</li>
-                                <li>MongoDB for schemaless / document-based data</li>
-                                <li>Backup strategies and migrations</li>
-                            </ul>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="skill-card text-center reveal" role="button" tabindex="0">
+                            <img src="assets/icons/sqlserver-official.svg" alt="Database" class="mb-3" width="64" height="64" style="object-fit: contain;" onerror="this.onerror=null;this.src='assets/icons/sqlserver.svg'">
+                            <h4 class="h5 mb-3">Database</h4>
+                            <p class="mb-0">SQL Server, MongoDB</p>
+                            <div class="skill-detail d-none">
+                                <p>Database design, querying and performance tuning across relational and document stores.</p>
+                                <ul>
+                                    <li>SQL Server: schemas, stored procedures, performance tuning</li>
+                                    <li>Designing indexes and query optimization</li>
+                                    <li>MongoDB for schemaless / document-based data</li>
+                                    <li>Backup strategies and migrations</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="skill-card text-center reveal" role="button" tabindex="0">
-                        <img src="assets/icons/azure-devops.svg" alt="Azure DevOps" class="skill-icon" onerror="this.onerror=null;this.src='assets/icons/azure.svg'">
-                        <h4 class="h5">DevOps & Management</h4>
-                        <p>CI/CD, Git, Agile, Scrum Master</p>
-                        <div class="skill-detail d-none">
-                            <p>Operational tooling and processes to deliver software reliably and quickly.</p>
-                            <ul>
-                                <li>CI/CD pipelines (Azure DevOps, GitHub Actions)</li>
-                                <li>Git branching strategies and code reviews</li>
-                                <li>Monitoring, logging and release management</li>
-                                <li>Agile practices</li>
-                            </ul>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="skill-card text-center reveal" role="button" tabindex="0">
+                            <img src="assets/icons/azure-devops.svg" alt="Azure DevOps" class="mb-3" width="64" height="64" style="object-fit: contain;" onerror="this.onerror=null;this.src='assets/icons/azure.svg'">
+                            <h4 class="h5 mb-3">DevOps & Management</h4>
+                            <p class="mb-0">CI/CD, Git, Agile, Scrum Master</p>
+                            <div class="skill-detail d-none">
+                                <p>Operational tooling and processes to deliver software reliably and quickly.</p>
+                                <ul>
+                                    <li>CI/CD pipelines (Azure DevOps, GitHub Actions)</li>
+                                    <li>Git branching strategies and code reviews</li>
+                                    <li>Monitoring, logging and release management</li>
+                                    <li>Agile practices</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
