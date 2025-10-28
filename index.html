@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Logeshkumar Portfolio</title>
+    <title>Logeshkumar's Portfolio</title>
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,6 @@
     
 </head>
 <body>
-
     <!-- Responsive Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container">
@@ -77,93 +76,85 @@
             </div>
         </div>
     </header>
-
     <main class="py-5">
         <div class="container">
-
             <!-- Skills Section -->
             <section id="skills" class="mb-5">
                 <h2 class="section-title">Technical Skills</h2>
-                <div class="row g-4">
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="skill-card text-center reveal" role="button" tabindex="0">
-                            <img src="assets/icons/dotnet-official.png" alt="Backend" class="mb-3" width="64" height="64" style="object-fit: contain;" onerror="this.onerror=null;this.src='assets/icons/dotnet.svg'">
-                            <h4 class="h5 mb-3">Backend Development</h4>
-                            <p class="mb-0">C#, ASP.NET Core, Web API,.NET MVC, LINQ, Entity Framework</p>
-                            <div class="skill-detail d-none">
-                                <p>Experience building scalable backend systems with .NET. Familiar with REST APIs, background processing and serverless functions.</p>
-                                <ul>
-                                    <li>.NET Core & ASP.NET Web API</li>
-                                    <li>Azure Functions & Serverless integrations</li>
-                                    <li>Message-based patterns (Service Bus)</li>
-                                    <li>Logging & monitoring (App Insights)</li>
-                                </ul>
-                            </div>
+                <div class="skill-grid">
+                    <div class="skill-card text-center reveal" role="button" tabindex="0">
+                        <img src="assets/icons/dotnet-official.png" alt="Backend" class="skill-icon" onerror="this.onerror=null;this.src='assets/icons/dotnet.svg'">
+                        <h4 class="h5">Backend Development</h4>
+                        <p>C#, ASP.NET Core, Web API,.NET MVC, LINQ, Entity Framework</p>
+                        <div class="skill-detail d-none">
+                            <p>Experience building scalable backend systems with .NET. Familiar with REST APIs, background processing and serverless functions.</p>
+                            <ul>
+                                <li>.NET Core & ASP.NET Web API</li>
+                                <li>Azure Functions & Serverless integrations</li>
+                                <li>Message-based patterns (Service Bus)</li>
+                                <li>Logging & monitoring (App Insights)</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="skill-card text-center reveal" role="button" tabindex="0">
-                            <img src="assets/icons/azure-official.png" alt="Azure Cloud" class="mb-3" width="64" height="64" style="object-fit: contain;" onerror="this.onerror=null;this.src='assets/icons/azure.svg'">
-                            <h4 class="h5 mb-3">Cloud Services</h4>
-                            <p class="mb-0">Azure Function APPS, Service Bus, Storage Account, Key Vault, Azure SQL</p>
-                            <div class="skill-detail d-none">
-                                <p>Hands-on with Azure PaaS and serverless components to build resilient cloud solutions.</p>
-                                <ul>
-                                    <li>Azure Function Apps for event-driven processing</li>
-                                    <li>Service Bus for reliable messaging</li>
-                                    <li>Blob & File Storage (Storage Account)</li>
-                                    <li>Key Vault for secrets & certificates</li>
-                                    <li>Azure SQL for relational data</li>
-                                </ul>
-                            </div>
+
+                    <div class="skill-card text-center reveal" role="button" tabindex="0">
+                        <img src="assets/icons/azure-official.png" alt="Azure Cloud" class="skill-icon" onerror="this.onerror=null;this.src='assets/icons/azure.svg'">
+                        <h4 class="h5">Cloud Services</h4>
+                        <p>Azure Function APPS, Service Bus, Storage Account, Key Vault, Azure SQL</p>
+                        <div class="skill-detail d-none">
+                            <p>Hands-on with Azure PaaS and serverless components to build resilient cloud solutions.</p>
+                            <ul>
+                                <li>Azure Function Apps for event-driven processing</li>
+                                <li>Service Bus for reliable messaging</li>
+                                <li>Blob & File Storage (Storage Account)</li>
+                                <li>Key Vault for secrets & certificates</li>
+                                <li>Azure SQL for relational data</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="skill-card text-center reveal" role="button" tabindex="0">
-                            <img src="assets/icons/html5-official.png" alt="Frontend" class="mb-3" width="64" height="64" style="object-fit: contain;" onerror="this.onerror=null;this.src='assets/icons/html5.svg'">
-                            <h4 class="h5 mb-3">Frontend Development</h4>
-                            <p class="mb-0">HTML, CSS, JavaScript, Bootstrap</p>
-                            <div class="skill-detail d-none">
-                                <p>UI development with responsive, accessible and performant frontend technologies.</p>
-                                <ul>
-                                    <li>Semantic HTML5 & CSS3</li>
-                                    <li>Responsive layouts with Bootstrap</li>
-                                    <li>JavaScript for interactivity and DOM manipulation</li>                                    
-                                    <li>Client-side optimization and accessibility</li>
-                                </ul>
-                            </div>
+
+                    <div class="skill-card text-center reveal" role="button" tabindex="0">
+                        <img src="assets/icons/html5-official.png" alt="Frontend" class="skill-icon" onerror="this.onerror=null;this.src='assets/icons/html5.svg'">
+                        <h4 class="h5">Frontend Development</h4>
+                        <p>HTML, CSS, JavaScript, Bootstrap</p>
+                        <div class="skill-detail d-none">
+                            <p>UI development with responsive, accessible and performant frontend technologies.</p>
+                            <ul>
+                                <li>Semantic HTML5 & CSS3</li>
+                                <li>Responsive layouts with Bootstrap</li>
+                                <li>JavaScript for interactivity and DOM manipulation</li>                                    
+                                <li>Client-side optimization and accessibility</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="skill-card text-center reveal" role="button" tabindex="0">
-                            <img src="assets/icons/sqlserver-official.svg" alt="Database" class="mb-3" width="64" height="64" style="object-fit: contain;" onerror="this.onerror=null;this.src='assets/icons/sqlserver.svg'">
-                            <h4 class="h5 mb-3">Database</h4>
-                            <p class="mb-0">SQL Server, MongoDB</p>
-                            <div class="skill-detail d-none">
-                                <p>Database design, querying and performance tuning across relational and document stores.</p>
-                                <ul>
-                                    <li>SQL Server: schemas, stored procedures, performance tuning</li>
-                                    <li>Designing indexes and query optimization</li>
-                                    <li>MongoDB for schemaless / document-based data</li>
-                                    <li>Backup strategies and migrations</li>
-                                </ul>
-                            </div>
+
+                    <div class="skill-card text-center reveal" role="button" tabindex="0">
+                        <img src="assets/icons/sqlserver-official.svg" alt="Database" class="skill-icon" onerror="this.onerror=null;this.src='assets/icons/sqlserver.svg'">
+                        <h4 class="h5">Database</h4>
+                        <p>SQL Server, MongoDB</p>
+                        <div class="skill-detail d-none">
+                            <p>Database design, querying and performance tuning across relational and document stores.</p>
+                            <ul>
+                                <li>SQL Server: schemas, stored procedures, performance tuning</li>
+                                <li>Designing indexes and query optimization</li>
+                                <li>MongoDB for schemaless / document-based data</li>
+                                <li>Backup strategies and migrations</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="skill-card text-center reveal" role="button" tabindex="0">
-                            <img src="assets/icons/azure-devops.svg" alt="Azure DevOps" class="mb-3" width="64" height="64" style="object-fit: contain;" onerror="this.onerror=null;this.src='assets/icons/azure.svg'">
-                            <h4 class="h5 mb-3">DevOps & Management</h4>
-                            <p class="mb-0">CI/CD, Git, Agile, Scrum Master</p>
-                            <div class="skill-detail d-none">
-                                <p>Operational tooling and processes to deliver software reliably and quickly.</p>
-                                <ul>
-                                    <li>CI/CD pipelines (Azure DevOps, GitHub Actions)</li>
-                                    <li>Git branching strategies and code reviews</li>
-                                    <li>Monitoring, logging and release management</li>
-                                    <li>Agile practices</li>
-                                </ul>
-                            </div>
+
+                    <div class="skill-card text-center reveal" role="button" tabindex="0">
+                        <img src="assets/icons/azure-devops.svg" alt="Azure DevOps" class="skill-icon" onerror="this.onerror=null;this.src='assets/icons/azure.svg'">
+                        <h4 class="h5">DevOps & Management</h4>
+                        <p>CI/CD, Git, Agile, Scrum Master</p>
+                        <div class="skill-detail d-none">
+                            <p>Operational tooling and processes to deliver software reliably and quickly.</p>
+                            <ul>
+                                <li>CI/CD pipelines (Azure DevOps, GitHub Actions)</li>
+                                <li>Git branching strategies and code reviews</li>
+                                <li>Monitoring, logging and release management</li>
+                                <li>Agile practices</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -223,60 +214,64 @@
             <section id="contact" class="mb-5">
                 <h2 class="section-title">Get In Touch</h2>
                 <div class="contact-info">
-                    <div class="contact-grid">
-                        <div>
-                            <h4 class="h5 mb-4">Contact Information</h4>
-                            <div class="contact-list">
-                                <div class="contact-item">
-                                    <div class="contact-icon">
-                                        <i class="bi bi-envelope-fill"></i>
-                                    </div>
-                                    <div class="contact-meta">
-                                        <p class="mb-0">Email</p>
-                                        <a href="mailto:logupandian@gmail.com" class="text-decoration-none" aria-label="Email Logesh">logupandian@gmail.com</a>
-                                    </div>
-                                    <div class="contact-ctas">
-                                        <a class="btn btn-primary btn-contact" href="mailto:logupandian@gmail.com">Send</a>
-                                    </div>
+                    <h4 class="h5 mb-4">Contact Information</h4>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-envelope-fill"></i>
                                 </div>
-
-                                <div class="contact-item">
-                                    <div class="contact-icon">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </div>
-                                    <div class="contact-meta">
-                                        <p class="mb-0">WhatsApp</p>
-                                        <a href="https://wa.me/918870262990" target="_blank" class="text-decoration-none" aria-label="Open WhatsApp">+91 8870262990</a>
-                                    </div>
-                                    <div class="contact-ctas">
-                                        <a class="btn btn-success btn-contact" href="https://wa.me/918870262990" target="_blank" aria-label="Message on WhatsApp">Chat</a>
-                                    </div>
+                                <div class="contact-meta">
+                                    <p class="mb-0">Email</p>
+                                    <a href="mailto:logupandian@gmail.com" class="text-decoration-none" aria-label="Email Logesh">logupandian@gmail.com</a>
                                 </div>
-
-                                <div class="contact-item">
-                                    <div class="contact-icon">
-                                        <i class="bi bi-linkedin"></i>
-                                    </div>
-                                    <div class="contact-meta">
-                                        <p class="mb-0">LinkedIn</p>
-                                        <a href="https://www.linkedin.com/in/logeshkumarm/" target="_blank" class="text-decoration-none" aria-label="Open LinkedIn">linkedin.com/in/logeshkumarm</a>
-                                    </div>
-                                    <div class="contact-ctas">
-                                        <a class="btn btn-outline-primary btn-contact" href="https://www.linkedin.com/in/logeshkumarm/" target="_blank" aria-label="Open LinkedIn">Open</a>
-                                    </div>
+                                <div class="contact-ctas">
+                                    <a class="btn btn-primary btn-contact" href="mailto:logupandian@gmail.com">Send</a>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="contact-item">
-                                    <div class="contact-icon">
-                                        <i class="bi bi-github"></i>
-                                    </div>
-                                    <div class="contact-meta">
-                                        <p class="mb-0">GitHub</p>
-                                        <a href="https://github.com/LOGESHKUMARMURUGESAN/" target="_blank" class="text-decoration-none" aria-label="Open GitHub">github.com/LOGESHKUMARMURUGESAN</a>
-                                    </div>
-                                    <div class="contact-ctas">
-                                        <a class="btn btn-outline-secondary btn-contact" href="https://github.com/LOGESHKUMARMURUGESAN/" target="_blank" aria-label="Open GitHub">Open</a>
-                                    </div>
+                        <div class="col-md-6">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-whatsapp"></i>
+                                </div>
+                                <div class="contact-meta">
+                                    <p class="mb-0">WhatsApp</p>
+                                    <a href="https://wa.me/918870262990" target="_blank" class="text-decoration-none" aria-label="Open WhatsApp">+91 8870262990</a>
+                                </div>
+                                <div class="contact-ctas">
+                                    <a class="btn btn-success btn-contact" href="https://wa.me/918870262990" target="_blank" aria-label="Message on WhatsApp">Chat</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                                <div class="contact-meta">
+                                    <p class="mb-0">LinkedIn</p>
+                                    <a href="https://www.linkedin.com/in/logeshkumarm/" target="_blank" class="text-decoration-none" aria-label="Open LinkedIn">linkedin.com/in/logeshkumarm</a>
+                                </div>
+                                <div class="contact-ctas">
+                                    <a class="btn btn-outline-primary btn-contact" href="https://www.linkedin.com/in/logeshkumarm/" target="_blank" aria-label="Open LinkedIn">Open</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-github"></i>
+                                </div>
+                                <div class="contact-meta">
+                                    <p class="mb-0">GitHub</p>
+                                    <a href="https://github.com/LOGESHKUMARMURUGESAN/" target="_blank" class="text-decoration-none" aria-label="Open GitHub">github.com/LOGESHKUMARMURUGESAN</a>
+                                </div>
+                                <div class="contact-ctas">
+                                    <a class="btn btn-outline-secondary btn-contact" href="https://github.com/LOGESHKUMARMURUGESAN/" target="_blank" aria-label="Open GitHub">Open</a>
                                 </div>
                             </div>
                         </div>
@@ -291,148 +286,257 @@
                 </div>
             </section>
 
-                        <!-- Projects -->
-                        <section id="projects" class="mb-5">
-                                <h2 class="section-title">Projects</h2>
-                                <div class="accordion" id="projectsAccordion">
+            <!-- Projects -->
+            <section id="projects" class="mb-5">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="accordion" id="projectsAccordion">
 
-                                    <!-- Excel Automation -->
-                                    <div class="accordion-item reveal">
-                                        <h2 class="accordion-header" id="headingExcel">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExcel" aria-expanded="false" aria-controls="collapseExcel">
-                                                Excel Automation — Logic Valley Technologies
-                                                <span class="badge bg-primary ms-3">2025</span>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseExcel" class="accordion-collapse collapse" aria-labelledby="headingExcel" data-bs-parent="#projectsAccordion">
-                                            <div class="accordion-body">
-                                                <p class="mb-2"><strong>Role:</strong> Software Engineer I &nbsp; • &nbsp; <strong>Location:</strong> Remote / India &nbsp; • &nbsp; <strong>Duration:</strong> 2025</p>
-                                                <p>Built a serverless Excel processing pipeline using Azure Functions to process email attachments, store files in Blob Storage and write processed data to MongoDB. Integrated Microsoft Graph for attachments, App Insights for observability, and robust error handling for retries.</p>
-                                                <p class="mb-2"><strong>Tech stack:</strong></p>
-                                                <p>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-csharp" data-initial="C#">C#</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-dotnet" data-initial="NET">.NET Core</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-azure" data-initial="AZ">Azure Functions</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-blob" data-initial="B">Blob Storage</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-mongo" data-initial="MDB">MongoDB</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-insights" data-initial="AI">App Insights</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Upgrade Portal -->
-                                    <div class="accordion-item reveal">
-                                        <h2 class="accordion-header" id="headingUpgrade">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUpgrade" aria-expanded="false" aria-controls="collapseUpgrade">
-                                                Upgrade Portal — OTIS Elevator
-                                                <span class="badge bg-primary ms-3">2022–2025</span>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseUpgrade" class="accordion-collapse collapse" aria-labelledby="headingUpgrade" data-bs-parent="#projectsAccordion">
-                                            <div class="accordion-body">
-                                                <p class="mb-2"><strong>Role:</strong> Software Engineer &nbsp; • &nbsp; <strong>Location:</strong> Bengaluru, India &nbsp; • &nbsp; <strong>Duration:</strong> Apr 2022 – Mar 2025</p>
-                                                <p>Led backend and API development for a centralized portal handling spare parts orders, Excel uploads, pricing and incentives. Implemented async processing using Service Bus and designed APIs consumed by mobile clients.</p>
-                                                <p class="mb-2"><strong>Tech stack:</strong></p>
-                                                <p>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-csharp" data-initial="C#">C#</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-mvc" data-initial="MVC">.NET MVC</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-azure" data-initial="AZ">Azure Storage</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-servicebus" data-initial="SB">Service Bus</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-azuresql" data-initial="SQL">Azure SQL</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- B2B Refurbished -->
-                                    <div class="accordion-item reveal">
-                                        <h2 class="accordion-header" id="headingB2B">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseB2B" aria-expanded="false" aria-controls="collapseB2B">
-                                                B2B Refurbished Electronics Management System — CTDI
-                                                <span class="badge bg-primary ms-3">2021–2022</span>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseB2B" class="accordion-collapse collapse" aria-labelledby="headingB2B" data-bs-parent="#projectsAccordion">
-                                            <div class="accordion-body">
-                                                <p class="mb-2"><strong>Role:</strong> Software Engineer &nbsp; • &nbsp; <strong>Location:</strong> Bengaluru, India &nbsp; • &nbsp; <strong>Duration:</strong> Mar 2021 – Mar 2022</p>
-                                                <p>Maintained and migrated legacy systems to MVC, implemented spare parts module and automated warranty notifications to streamline operations for refurbished electronics lifecycle management.</p>
-                                                <p class="mb-2"><strong>Tech stack:</strong></p>
-                                                <p>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-vb" data-initial="VB">VB.NET</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-csharp" data-initial="C#">C#</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-mvc" data-initial="MVC">MVC</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-sqlserver" data-initial="SQL">SQL Server</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Sure Fit -->
-                                    <div class="accordion-item reveal">
-                                        <h2 class="accordion-header" id="headingSureFit">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSureFit" aria-expanded="false" aria-controls="collapseSureFit">
-                                                Sure Fit — CABCS
-                                                <span class="badge bg-primary ms-3">2020–2021</span>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseSureFit" class="accordion-collapse collapse" aria-labelledby="headingSureFit" data-bs-parent="#projectsAccordion">
-                                            <div class="accordion-body">
-                                                <p class="mb-2"><strong>Role:</strong> Software Engineer &nbsp; • &nbsp; <strong>Location:</strong> Bengaluru, India &nbsp; • &nbsp; <strong>Duration:</strong> Jul 2020 – Feb 2021</p>
-                                                <p>Developed a WinForms application integrated with a footprint scanner for measurements, generated PDF reports and uploaded artifacts to AWS S3 for secure storage.</p>
-                                                <p class="mb-2"><strong>Tech stack:</strong></p>
-                                                <p>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-csharp" data-initial="C#">C#</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-winforms" data-initial="WF">WinForms</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-postgres" data-initial="PG">Postgres</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-aws" data-initial="AW">AWS S3</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- SMART MINES -->
-                                    <div class="accordion-item reveal">
-                                        <h2 class="accordion-header" id="headingSmartMines">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSmartMines" aria-expanded="false" aria-controls="collapseSmartMines">
-                                                SMART MINES — Mines & Geology Dept, JSW Karnataka
-                                                <span class="badge bg-primary ms-3">2018–2020</span>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseSmartMines" class="accordion-collapse collapse" aria-labelledby="headingSmartMines" data-bs-parent="#projectsAccordion">
-                                            <div class="accordion-body">
-                                                <p class="mb-2"><strong>Role:</strong> Software Developer &nbsp; • &nbsp; <strong>Location:</strong> Karnataka, India &nbsp; • &nbsp; <strong>Duration:</strong> Oct 2018 – Jul 2020</p>
-                                                <p>Delivered a Windows application for RFID-enabled vehicle identification and weighbridge integration, capturing data and producing reports for compliance and operations.</p>
-                                                <p class="mb-2"><strong>Tech stack:</strong></p>
-                                                <p>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-winforms" data-initial="WF">WinForms</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-csharp" data-initial="C#">C#</span>
-                                                    <span class="badge bg-secondary me-1 tech-badge tech-sqlserver" data-initial="SQL">SQL Server</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                        <!-- Excel Automation -->
+                        <div class="accordion-item reveal">
+                            <h2 class="accordion-header" id="headingExcel">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExcel" aria-expanded="false" aria-controls="collapseExcel">
+                                    Excel Automation — Logic Valley Technologies
+                                    <span class="badge bg-primary ms-3">2025</span>
+                                </button>
+                            </h2>
+                            <div id="collapseExcel" class="accordion-collapse collapse" aria-labelledby="headingExcel" data-bs-parent="#projectsAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-2"><strong>Role:</strong> Software Engineer I &nbsp; • &nbsp; <strong>Location:</strong> Remote / India &nbsp; • &nbsp; <strong>Duration:</strong> 2025</p>
+                                    <p>Built a serverless Excel processing pipeline using Azure Functions to process email attachments, store files in Blob Storage and write processed data to MongoDB. Integrated Microsoft Graph for attachments, App Insights for observability, and robust error handling for retries.</p>
+                                    <p class="mb-2"><strong>Tech stack:</strong></p>
+                                    <p>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-csharp" data-initial="C#">C#</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-dotnet" data-initial="NET">.NET Core</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-azure" data-initial="AZ">Azure Functions</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-blob" data-initial="B">Blob Storage</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-mongo" data-initial="MDB">MongoDB</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-insights" data-initial="AI">App Insights</span>
+                                    </p>
                                 </div>
-                        </section>
+                            </div>
+                        </div>
 
-           
+                        <!-- Upgrade Portal -->
+                        <div class="accordion-item reveal">
+                            <h2 class="accordion-header" id="headingUpgrade">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUpgrade" aria-expanded="false" aria-controls="collapseUpgrade">
+                                    Upgrade Portal — OTIS Elevator
+                                    <span class="badge bg-primary ms-3">2022–2025</span>
+                                </button>
+                            </h2>
+                            <div id="collapseUpgrade" class="accordion-collapse collapse" aria-labelledby="headingUpgrade" data-bs-parent="#projectsAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-2"><strong>Role:</strong> Software Engineer &nbsp; • &nbsp; <strong>Location:</strong> Bengaluru, India &nbsp; • &nbsp; <strong>Duration:</strong> Apr 2022 – Mar 2025</p>
+                                    <p>Led backend and API development for a centralized portal handling spare parts orders, Excel uploads, pricing and incentives. Implemented async processing using Service Bus and designed APIs consumed by mobile clients.</p>
+                                    <p class="mb-2"><strong>Tech stack:</strong></p>
+                                    <p>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-csharp" data-initial="C#">C#</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-mvc" data-initial="MVC">.NET MVC</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-azure" data-initial="AZ">Azure Storage</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-servicebus" data-initial="SB">Service Bus</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-azuresql" data-initial="SQL">Azure SQL</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- B2B Refurbished -->
+                        <div class="accordion-item reveal">
+                            <h2 class="accordion-header" id="headingB2B">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseB2B" aria-expanded="false" aria-controls="collapseB2B">
+                                    B2B Refurbished Electronics Management System — CTDI
+                                    <span class="badge bg-primary ms-3">2021–2022</span>
+                                </button>
+                            </h2>
+                            <div id="collapseB2B" class="accordion-collapse collapse" aria-labelledby="headingB2B" data-bs-parent="#projectsAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-2"><strong>Role:</strong> Software Engineer &nbsp; • &nbsp; <strong>Location:</strong> Bengaluru, India &nbsp; • &nbsp; <strong>Duration:</strong> Mar 2021 – Mar 2022</p>
+                                    <p>Maintained and migrated legacy systems to MVC, implemented spare parts module and automated warranty notifications to streamline operations for refurbished electronics lifecycle management.</p>
+                                    <p class="mb-2"><strong>Tech stack:</strong></p>
+                                    <p>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-vb" data-initial="VB">VB.NET</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-csharp" data-initial="C#">C#</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-mvc" data-initial="MVC">MVC</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-sqlserver" data-initial="SQL">SQL Server</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sure Fit -->
+                        <div class="accordion-item reveal">
+                            <h2 class="accordion-header" id="headingSureFit">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSureFit" aria-expanded="false" aria-controls="collapseSureFit">
+                                    Sure Fit — CABCS
+                                    <span class="badge bg-primary ms-3">2020–2021</span>
+                                </button>
+                            </h2>
+                            <div id="collapseSureFit" class="accordion-collapse collapse" aria-labelledby="headingSureFit" data-bs-parent="#projectsAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-2"><strong>Role:</strong> Software Engineer &nbsp; • &nbsp; <strong>Location:</strong> Bengaluru, India &nbsp; • &nbsp; <strong>Duration:</strong> Jul 2020 – Feb 2021</p>
+                                    <p>Developed a WinForms application integrated with a footprint scanner for measurements, generated PDF reports and uploaded artifacts to AWS S3 for secure storage.</p>
+                                    <p class="mb-2"><strong>Tech stack:</strong></p>
+                                    <p>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-csharp" data-initial="C#">C#</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-winforms" data-initial="WF">WinForms</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-postgres" data-initial="PG">Postgres</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-aws" data-initial="AW">AWS S3</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SMART MINES -->
+                        <div class="accordion-item reveal">
+                            <h2 class="accordion-header" id="headingSmartMines">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSmartMines" aria-expanded="false" aria-controls="collapseSmartMines">
+                                    SMART MINES — Mines & Geology Dept, JSW Karnataka
+                                    <span class="badge bg-primary ms-3">2018–2020</span>
+                                </button>
+                            </h2>
+                            <div id="collapseSmartMines" class="accordion-collapse collapse" aria-labelledby="headingSmartMines" data-bs-parent="#projectsAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-2"><strong>Role:</strong> Software Developer &nbsp; • &nbsp; <strong>Location:</strong> Karnataka, India &nbsp; • &nbsp; <strong>Duration:</strong> Oct 2018 – Jul 2020</p>
+                                    <p>Delivered a Windows application for RFID-enabled vehicle identification and weighbridge integration, capturing data and producing reports for compliance and operations.</p>
+                                    <p class="mb-2"><strong>Tech stack:</strong></p>
+                                    <p>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-winforms" data-initial="WF">WinForms</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-csharp" data-initial="C#">C#</span>
+                                        <span class="badge bg-secondary me-1 tech-badge tech-sqlserver" data-initial="SQL">SQL Server</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </section>
 
             <!-- Education -->
             <section id="education" class="mb-5">
-                <h2 class="h4 mb-3">Education</h2>
-                <div class="row">
+                <h2 class="section-title">Education</h2>
+                <div class="row g-4">
+                    <!-- Masters -->
                     <div class="col-md-6">
-                        <ul class="list-group">
-                            <li class="list-group-item"><strong>Masters:</strong> MCA – PSNA College of Engineering & Technology, Dindigul. Anna University, 2018</li>
-                            <li class="list-group-item"><strong>Graduation:</strong> BCA – Mary Matha College of Arts & Science, Periyakulam. Kamaraj University, 2016</li>
-                        </ul>
+                        <div class="card h-100 reveal">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="education-icon me-3">
+                                        <i class="bi bi-mortarboard-fill text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="h5 mb-1">Master of Computer Applications (MCA)</h3>
+                                        <p class="text-muted mb-0">2015 - 2018</p>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2">
+                                        <i class="bi bi-building me-2 text-primary"></i>
+                                        PSNA College of Engineering & Technology
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-geo-alt me-2 text-primary"></i>
+                                        Dindigul, Tamil Nadu
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-award me-2 text-primary"></i>
+                                        Anna University
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6 mt-3 mt-md-0">
-                        <ul class="list-group">
-                            <li class="list-group-item"><strong>HSC:</strong> V.M. Government Higher Secondary School, Periyakulam. Tamil Nadu State Board, 2013</li>
-                            <li class="list-group-item"><strong>SSLC:</strong> V.M. Government Higher Secondary School, Periyakulam. Tamil Nadu State Board, 2011</li>
-                        </ul>
+
+                    <!-- Bachelors -->
+                    <div class="col-md-6">
+                        <div class="card h-100 reveal">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="education-icon me-3">
+                                        <i class="bi bi-mortarboard-fill text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="h5 mb-1">Bachelor of Computer Applications (BCA)</h3>
+                                        <p class="text-muted mb-0">2013 - 2016</p>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2">
+                                        <i class="bi bi-building me-2 text-primary"></i>
+                                        Mary Matha College of Arts & Science
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-geo-alt me-2 text-primary"></i>
+                                        Periyakulam, Tamil Nadu
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-award me-2 text-primary"></i>
+                                        Madurai Kamaraj University
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Higher Secondary -->
+                    <div class="col-md-6">
+                        <div class="card h-100 reveal">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="education-icon me-3">
+                                        <i class="bi bi-journal-text text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="h5 mb-1">Higher Secondary (HSC)</h3>
+                                        <p class="text-muted mb-0">2011 - 2013</p>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2">
+                                        <i class="bi bi-building me-2 text-primary"></i>
+                                        V.M. Government Higher Secondary School
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-geo-alt me-2 text-primary"></i>
+                                        Periyakulam, Tamil Nadu
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-award me-2 text-primary"></i>
+                                        Tamil Nadu State Board
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SSLC -->
+                    <div class="col-md-6">
+                        <div class="card h-100 reveal">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="education-icon me-3">
+                                        <i class="bi bi-journal-text text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="h5 mb-1">Secondary School (SSLC)</h3>
+                                        <p class="text-muted mb-0">2010 - 2011</p>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2">
+                                        <i class="bi bi-building me-2 text-primary"></i>
+                                        V.M. Government Higher Secondary School
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-geo-alt me-2 text-primary"></i>
+                                        Periyakulam, Tamil Nadu
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-award me-2 text-primary"></i>
+                                        Tamil Nadu State Board
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -442,7 +546,7 @@
 
     <footer class="bg-dark text-white py-3">
         <div class="container d-flex justify-content-between align-items-center">
-            <small>&copy; <span id="year"></span> Logeshkumar</small>
+            <small>&copy; <span id="year"></span> Magizh Tech solutions, Coimbatore</small>
             <div>
                 <a class="text-white me-3" href="https://github.com/logeshkumar" target="_blank">GitHub</a>
                 <a class="text-white" href="https://www.linkedin.com/in/logeshkumarmurugesan/" target="_blank">LinkedIn</a>
@@ -458,15 +562,11 @@
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="skillModalLabel">Skill</h5>
-            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            <h5 class="modal-title" id="skillModalLabel">Skill</h5>            
           </div>
           <div class="modal-body">
             <!-- filled dynamically -->
-          </div>
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div> -->
+          </div>        
         </div>
       </div>
     </div>
