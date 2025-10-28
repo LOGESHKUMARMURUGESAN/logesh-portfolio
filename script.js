@@ -35,6 +35,36 @@ document.addEventListener('click', function (e) {
 	}
 });
 
+// Copy buttons for contact details (email / phone)
+document.addEventListener('click', function (e) {
+    const btn = e.target.closest && e.target.closest('.contact-copy');
+    if (!btn) return;
+    const value = btn.getAttribute('data-copy');
+    if (!value) return;
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(value).then(() => {
+            const original = btn.innerHTML;
+            btn.innerHTML = 'Copied';
+            btn.classList.add('btn-success');
+            btn.classList.remove('btn-outline-secondary');
+            setTimeout(() => {
+                btn.innerHTML = original;
+                btn.classList.remove('btn-success');
+                btn.classList.add('btn-outline-secondary');
+            }, 1800);
+        }).catch(() => {
+            // fallback: select text
+            const tmp = document.createElement('input');
+            document.body.appendChild(tmp);
+            tmp.value = value;
+            tmp.select();
+            try { document.execCommand('copy'); }
+            catch (err) {}
+            document.body.removeChild(tmp);
+        });
+    }
+});
+
 // Skill card click -> populate and show modal
 (function () {
 	document.addEventListener('DOMContentLoaded', function () {
@@ -67,9 +97,9 @@ document.addEventListener('click', function (e) {
             // Set proficiency level based on skill (you can customize these)
             const proficiencyMap = {
                 'Backend Development': 90,
-                'Cloud Services': 85,
-                'Frontend Development': 80,
-                'Database': 85,
+                'Cloud Services': 70,
+                'Frontend Development': 75,
+                'Database': 75,
                 'DevOps & Management': 75
             };
             const proficiency = proficiencyMap[title] || 80;
