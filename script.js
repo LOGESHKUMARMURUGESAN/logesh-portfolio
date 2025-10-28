@@ -35,3 +35,70 @@ document.addEventListener('click', function (e) {
 	}
 });
 
+// Skill card click -> populate and show modal
+(function () {
+	document.addEventListener('DOMContentLoaded', function () {
+		const modalEl = document.getElementById('skillModal');
+		if (!modalEl) return; // modal not present
+		const bsModal = new bootstrap.Modal(modalEl);
+
+		function openSkillModal(card) {
+            const titleEl = card.querySelector('h4');
+            const shortEl = card.querySelector('p');
+            const detailEl = card.querySelector('.skill-detail');
+            const iconEl = card.querySelector('img');
+            const title = titleEl ? titleEl.textContent.trim() : 'Skill';
+            
+            // Create modal content with icon and proficiency meter
+            const modalTitle = modalEl.querySelector('.modal-title');
+            modalTitle.innerHTML = '';
+            if (iconEl) {
+                const icon = iconEl.cloneNode(true);
+                icon.style.width = '48px';
+                icon.style.height = '48px';
+                modalTitle.appendChild(icon);
+            }
+            modalTitle.insertAdjacentText('beforeend', title);
+            
+            // Prepare modal body content with proficiency meter
+            let content = '<div class="mb-4">';
+            content += `<h6 class="fw-bold text-primary mb-2">Proficiency Level</h6>`;
+            content += '<div class="proficiency-meter">';
+            // Set proficiency level based on skill (you can customize these)
+            const proficiencyMap = {
+                'Backend Development': 90,
+                'Cloud Services': 85,
+                'Frontend Development': 80,
+                'Database': 85,
+                'DevOps & Management': 75
+            };
+            const proficiency = proficiencyMap[title] || 80;
+            content += `<div class="fill" style="width: ${proficiency}%"></div>`;
+            content += '</div>';
+            
+            // Add description and skills list
+            if (detailEl) {
+                content += detailEl.innerHTML;
+            } else if (shortEl) {
+                content += `<p>${shortEl.innerHTML}</p>`;
+            }
+            content += '</div>';
+            
+            modalEl.querySelector('.modal-body').innerHTML = content;
+            
+            // Add modal-specific classes
+            modalEl.querySelector('.modal-dialog').classList.add('skill-modal');
+            
+            bsModal.show();
+        }
+
+		const cards = Array.from(document.querySelectorAll('.skill-card[role="button"]'));
+		cards.forEach(card => {
+			card.addEventListener('click', () => openSkillModal(card));
+			card.addEventListener('keydown', (e) => {
+				if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openSkillModal(card); }
+			});
+		});
+	});
+})();
+
