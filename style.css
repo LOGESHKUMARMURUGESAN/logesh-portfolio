@@ -148,11 +148,93 @@ h1, h2, h3 {
   font-weight: 600;
 }
 
+/* Project accordion styles */
+.accordion-button {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--dark-bg);
+}
+.accordion-button:not(.collapsed) {
+  color: var(--accent-cta-contrast);
+  background: var(--accent-cta);
+}
+.accordion-item {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+.accordion-body p {
+  color: var(--secondary-color);
+}
+
+/* Tech badges with icon-like initials and micro animation */
+.tech-badge {
+  background: #f1f3f5;
+  color: var(--dark-bg);
+  font-weight: 600;
+  position: relative;
+  padding-left: 40px;
+  transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease;
+  display: inline-block;
+  border-radius: 8px;
+  animation: tech-pop 420ms cubic-bezier(.2,.9,.2,1) both;
+}
+
+.tech-badge::before {
+  content: attr(data-initial);
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Per-tech colors for the little icon block */
+.tech-csharp::before { background: #68217A; }
+.tech-dotnet::before { background: #0078D7; }
+.tech-azure::before { background: #008AD8; }
+.tech-blob::before { background: #0F62FE; }
+.tech-mongo::before { background: #47A248; }
+.tech-insights::before { background: #FF8C00; }
+.tech-mvc::before { background: #512BD4; }
+.tech-servicebus::before { background: #0A66C2; }
+.tech-azuresql::before { background: #0072C6; }
+.tech-vb::before { background: #6A1B9A; }
+.tech-sqlserver::before { background: #0073C6; }
+.tech-winforms::before { background: var(--primary-color); }
+.tech-postgres::before { background: #336791; }
+.tech-aws::before { background: #FF9900; }
+
+.tech-badge:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 26px rgba(11,94,215,0.08);
+}
+
+@keyframes tech-pop {
+  0% { transform: translateY(-6px) scale(0.96); opacity: 0; }
+  60% { transform: translateY(2px) scale(1.03); opacity: 1; }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+
 .badge {
   font-family: var(--font-skills);
   font-weight: 500;
   font-size: 0.75rem;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .tech-badge { animation: none; transition: none; }
+}
+
 
 /* Experience & Education */
 #experience, #education {
@@ -216,6 +298,9 @@ footer {
   border-radius: 10px;
   background: linear-gradient(180deg, rgba(11,94,215,0.05), rgba(0,0,0,0.01));
   transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
+  /* responsive safety */
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .contact-item:hover {
@@ -244,12 +329,21 @@ footer {
   color: var(--dark-bg);
   text-decoration: none;
   font-weight: 600;
+  /* Prevent long URLs from forcing width */
+  word-break: break-word;
+}
+
+.contact-meta {
+  /* allow this area to shrink nicely */
+  flex: 1 1 180px;
+  min-width: 0; /* important for flex children to shrink */
 }
 
 .contact-ctas {
   margin-left: auto;
   display: flex;
   gap: 0.5rem;
+  flex: 0 0 auto;
 }
 
 .btn-contact {
@@ -271,6 +365,36 @@ footer {
 @media (max-width: 767px) {
   .contact-grid { grid-template-columns: 1fr; }
   .contact-ctas { margin-left: 0; }
+}
+
+/* Better stacking on small screens */
+@media (max-width: 767px) {
+  .contact-item {
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .contact-meta {
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  .contact-ctas {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-start;
+  }
+  .contact-ctas .btn-contact {
+    flex: 0 0 auto;
+  }
+  .contact-image-wrap {
+    text-align: center;
+  }
+}
+
+/* Prevent page-level horizontal overflow from contact section */
+.contact-info, .contact-grid {
+  max-width: 100%;
+  overflow: hidden;
 }
 
 /* CTA color tweaks in contact context */
